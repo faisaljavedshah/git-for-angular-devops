@@ -1,6 +1,10 @@
 {
   "name": "admin-panel-layout",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=12.2.12",
+    "npm": ">=8.12.2"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve --configuration=dev -o",
