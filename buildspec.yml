@@ -10,7 +10,7 @@ phases:
       - npm install --legacy-peer-deps
   build:
     commands:
-      - ng build --configuration production
+      - ng build
   post_build:
     commands:
       - echo Entered the post_build phase...
@@ -18,4 +18,4 @@ artifacts:
   files:
     - '**/*'
   discard-paths: yes
-  base-directory: 'public/assets/angular'
+  base-directory: 'dist/admin-panel-layout'
