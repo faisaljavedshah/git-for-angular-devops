@@ -1,7 +1,7 @@
 //Importing dependencies
 const express = require('express');
 var path = require('path');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 
 //Starting Express app
 const app = express();
