@@ -7,11 +7,11 @@ const port = process.env.PORT || 8081;
 const app = express();
 
 //Set the base path to the angular-test dist folder
-app.use(express.static(path.join(__dirname, 'dist/admin-panel-layout')));
+app.use(express.static(path.join(__dirname, '/')));
 
 //Any routes will be redirected to the angular app
 app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'dist/admin-panel-layout/index.html'));
+    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 //Starting server on port 8081
